@@ -5,6 +5,7 @@ ARG USER
 ARG USER_ID
 ARG GROUP_ID
 
+
 # Force apt "--no-install-recommends" to limit the image size
 RUN echo 'APT::Install-Recommends   "0";'   >> /etc/apt/apt.conf.d/99local && \
     echo 'APT::Install-Suggests     "0";'   >> /etc/apt/apt.conf.d/99local && \
